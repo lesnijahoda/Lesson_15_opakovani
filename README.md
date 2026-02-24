@@ -10,7 +10,8 @@ oscar
 juliett
 ```
 ### Postup:
-  1. Vytovříme souobor `slovo.txt` obsahující v každém řádku pořadí a jeden znak našeho slova.
+1. Vytvořte **fork** tohoto projektu a v něm vypracujte následující úlohy. 
+2. Vytovříme souobor `slovo.txt` obsahující v každém řádku pořadí a jeden znak našeho slova. Slovo by nemělo obsahovat diakritiku a případné mezery nahraďte `_`.
      ```bash
      1;A
      2;h
@@ -18,9 +19,11 @@ juliett
      4;j
      ```
   Lze využít následující script:
-Ukázkový postup najdete níže: 
-``` bash
-echo "Ahoj" | fold -w1 | nl -w1 -s';' > slovo.txt                
+  ``` bash
+echo "Ahoj" | fold -w1 | nl -w1 -s';' > slovo.txt
 ```
+3. Ze slova pomocí tr nahraďte všechna velká písmena za malá.
+4. `slovo.txt` seřadíme podle 2. sloupce a výsledek uložte do souboru `slovo_sorted.txt`
+5. pomocí join 
 
   
